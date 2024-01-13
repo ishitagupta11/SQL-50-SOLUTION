@@ -1,0 +1,15 @@
+# Write your MySQL query statement below
+select name
+from customer
+where referee_id!=2  or referee_id is null;
+
+#Explanation
+We use not equal to 2 as the question has asked us the names of the customer that are not referred by the customer with id = 2
+We used null because we want the names that have referee_id as null if we don't use null then we will only get the output zack (as it has referee_id not 2)
+
+#Different Approaches
+There will be slight change in where condition select and from will remain same
+
+Approach 1 (Best Approach) - where referee_id<>2 or referee_id is null;
+
+Approach 2 (Worst Approach)- where referee_id=1 or referee_id is null;
